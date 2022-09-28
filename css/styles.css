@@ -4,7 +4,7 @@
 --bg-color: hsl(0, 2%, 90%);
 --bg-card-color: hsl(0, 0%, 98%);
 --transition: color 0.1s, background-color 0.2s ease-in-out;
---border-radius:border-radius:.4em;
+--border-radius: 0.4em;
 }
 
 *{
