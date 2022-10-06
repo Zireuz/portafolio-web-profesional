@@ -156,6 +156,7 @@ body.dark {
 .card__title{
     margin: 0;
     font-size: 1.2rem;
+    margin-bottom: 1em;
 }
 
 .card__subtitle{
@@ -172,6 +173,12 @@ body.dark {
     line-height: 1.4;
 }
 
+.card__image-container{
+margin: auto;
+padding: auto;
+display:flex;
+justify-content: center;
+}
 .skills{
     padding: 1em 0;
 }
@@ -252,6 +259,38 @@ body.dark {
 
 .skills__bar--90::after{
     --skill-bar-length:90%;
+}
+
+.experience{
+    display: flex;
+    align-items: start; 
+    margin-bottom: 1em;
+    padding: 1em;   
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.experience__image{
+    max-width: 15%;
+    margin-right: 1em;
+}
+
+.experience__time{
+    font-size: 0.8rem;
+    margin-bottom: 0.5em;
+}
+
+.experience__job{
+    margin: 0;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.experience__description{
+    font-size: 0.8rem; 
+    margin-bottom: 1.5em;
 }
 
 .icon{
