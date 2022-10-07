@@ -173,6 +173,14 @@ body.dark {
     line-height: 1.4;
 }
 
+@media screen and (min-width: 760px){
+    
+.card--project{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column: 1/-1;
+}
+}
 .card__image-container{
 margin: auto;
 padding: auto;
@@ -293,6 +301,56 @@ justify-content: center;
     margin-bottom: 1.5em;
 }
 
+.project{
+    margin-left: 2em;
+}
+
+.project__tags{
+display: flex;
+justify-content: space-between;
+margin: 0.5em 0;
+font-size: 0.6rem;  
+width: 300px; 
+}
+
+@media screen and (min-width: 760px){
+    .project__tags{
+    width: 325px;
+    font-size: 0.8rem;
+    }
+}
+
+.project__tag{
+    padding: 0.4em 0.8em;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+}
+
+.button{
+    width: 100px;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.button--primary{
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.button--ghost{
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
 .icon{
     margin-right: 1em;
 }
